@@ -4,8 +4,11 @@ import {
   Item,
   Inner,
   Title,
+  Image,
+  Pane,
   SubTitle,
 } from "../jumbotron/styles/jumbotron";
+
 
 export default function Jumbotron({
   children,
@@ -27,4 +30,12 @@ Jumbotron.Title = function JumbotronTitle({ children, ...restProps }) {
 };
 Jumbotron.SubTitle = function JumbotronSubTitle({ children, ...restProps }) {
   return <SubTitle {...restProps}>{children}</SubTitle>;
+};
+
+Jumbotron.Image = function JumbotronImage({ ...restProps }) {
+  return <Image {...restProps} />;
+};
+
+Jumbotron.Pane = function JumbotronPage({ children, ...restProps }) {
+  return <Pane {...restProps}>{children}</Pane>;
 };
